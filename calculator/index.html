@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        html {
+            font-size: 100px;
+        }
+        .calculator {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+            border: 0.5em solid black;
+            border-radius: 8%;
+            width: 50%;
+            aspect-ratio: 1;
+            box-shadow: 2px 2px 20px rgba(209, 114, 5, 0.856);
+        }
+        .calculator-screen {
+            border: 1px solid #ccc; /* добавление границы */
+            box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1); /* внутренняя тень */
+            border-radius: 5px; /* закругленные углы */
+            padding: 10px; /* внутренние отступы */
+            font-size: 2em; /* размер шрифта */
+            background-color: #fff; /* цвет фона */
+            color: #333; /* цвет текста */
+            margin-bottom: 20px; /* нижний отступ */
+        }
+        button {
+            border: 1px solid #ccc; /* добавление границы */
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* добавление тени */
+            border-radius: 5px; /* закругленные углы */
+            padding: 15px; /* внутренние отступы */
+            font-size: 1.5em; /* размер шрифта */
+            background-color: #f0f0f0; /* цвет фона */
+            color: #333; /* цвет текста */
+            margin: auto; 
+            cursor: pointer; 
+        }
+
+        button:hover {
+            background-color: #42f70b; 
+        }
+
+        button:active {
+            box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2); 
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="calculator">
+        <div class="display">
+            <input type="text" class="calculator-screen" value="" disabled />
+        </div>
+        <div class="buttons">
+            <button class="operator" value="+">+</button>
+            <button class="operator" value="-">-</button>
+            <button class="operator" value="*">&times;</button>
+            <button class="operator" value="/">&divide;</button>
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="0">0</button>
+            <button value=".">.</button>
+            <button class="all-clear" value="all-clear">AC</button>
+            <button class="equal-sign" value="=">=</button>
+        </div>
+    </div>
+    <script>
+
+    </script>
 </body>
 </html>

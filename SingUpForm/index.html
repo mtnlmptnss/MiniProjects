@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="./resources/satoru-gojo-season-2-new-illustration-v0-9makeeg1w6kb1.jpg" alt="phoneImg" class="main-image">
+            <div class="overlay-content">
+                <img src="./resources/4beee86b14048bc16e77079ab556913f.svg" alt="logo" class="overlay-image">
+                <p class="image-text">Yeei</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <h1>Form registration for new user</h1>
+            <form action="#">
+                <legend>Oke! put your data here!</legend>
+                <br>
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" minlength="1" maxlength="10" required>
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" minlength="1" maxlength="10" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone"  maxlength="15" required>
+                </div>
+                <div>
+                    <label for="Pass">Password</label>
+                    <input type="password" id="Pass" name="Pass" minlength="8" required>
+                </div>
+                <div>
+                    <label for="Confirm">Confirm Password</label>
+                    <input type="password" id="Confirm" name="Confirm" minlength="8" required>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <p>Already have an account? <a href="https://www.youtube.com/@mtnlmptnss">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
